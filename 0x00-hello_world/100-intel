@@ -1,0 +1,4 @@
+#!/bin/bash
+cfile="$CFILE"
+filename="${cfile%.*}"
+gcc -S -masm=intel "$cfile" -o "$filename.s"
